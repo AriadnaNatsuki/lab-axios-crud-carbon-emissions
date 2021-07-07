@@ -1,0 +1,35 @@
+{
+    "dogs":[
+    {
+        "name":"India",
+        "raza": ["galgo"],
+        "edad":5,
+        "esterilizado": true 
+    },
+    {
+        "name": "Wendy",
+        "raza": ["podenco andaluz"],
+        "edad": 2,
+        "esterilizado": true
+    },
+    {
+        "name": "Duque",
+        "raza": ["bodeguero andaluz"],
+        "edad": 4,
+        "esterilizado": true
+    },
+    {
+        "name": "Bobby",
+        "raza": ["yorkshire terrier"],
+        "edad": 16,
+        "esterilizado": false
+    },
+    {
+        "name": "Pancho",
+        "raza": ["pastor belga","labrador"],
+        "edad": 5,
+        "esterilizado": false
+    }
+
+]
+}

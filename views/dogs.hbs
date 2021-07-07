@@ -1,0 +1,16 @@
+<h1>Dogs</h1>
+<ul>
+{{#each dogs as |dog|}}
+<br>
+<li>Nombre: {{dog.name}}</li>
+<li>Raza: {{dog.raza}}</li>
+<li>Edad: {{dog.edad}} años</li>
+<li>Esterilizado:
+    {{#if dog.esterilizado}}
+    SI
+    {{else}}
+    NO
+    {{/if}}</li>
+<br>
+{{/each}}
+</ul>

@@ -1,0 +1,23 @@
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+const droneSchema = new Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    raza: {
+        type: [String],
+        required: true
+    },
+    edad: {
+        type: Number,
+        required: true
+    },
+    esterilizado: {
+        type: Boolean,
+        required: true
+    }
+})
+
+//Le decimos a Mongoose que genere el modelo Drone y lo exportamos
+module.exports = mongoose.model('Dog', droneSchema)
