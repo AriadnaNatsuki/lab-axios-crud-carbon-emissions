@@ -1,16 +1,31 @@
 <h1>Dogs</h1>
-<ul>
-{{#each dogs as |dog|}}
-<br>
-<li>Nombre: {{dog.name}}</li>
-<li>Raza: {{dog.raza}}</li>
-<li>Edad: {{dog.edad}} años</li>
-<li>Esterilizado:
-    {{#if dog.esterilizado}}
-    SI
-    {{else}}
-    NO
-    {{/if}}</li>
-<br>
-{{/each}}
-</ul>
+
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    {{#each dogs as |dog|}}
+    <div class="col">
+        <div class="card">
+            {{!-- <img src="..." class="card-img-top" alt="..."> --}}
+            <div class="card-body">
+                <h5 class="card-title">{{dog.name}}</h5>
+                {{!-- <p class="card-text"> --}}
+                <ul>
+                {{!-- <br> --}}
+                <li>Raza: {{dog.raza}}</li>
+                <li>Edad: {{dog.edad}} años</li>
+                <li>Esterilizado:
+                    {{#if dog.esterilizado}}
+                    SI
+                    {{else}}
+                    NO
+                    {{/if}}</li>
+                {{!-- <br> --}}
+                </ul>
+                {{!-- </p> --}}
+                <a class="btn btn-primary btn btn-danger" href="dogs/delete" role="button">Delete</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

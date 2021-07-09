@@ -1,0 +1,33 @@
+<h1>🐶Nuevo perrete buscando hogar🏡</h1>
+
+<form action="/dogs" method="POST">
+    <div class="mb-3">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" name="name">
+        </div>
+
+    <div class="mb-3">
+        <label for="edad" class="form-label">Edad</label>
+        <input type="number" class="form-control" id="edad" name="edad">
+     
+    </div>
+        {{!-- <div class="mb-3">
+            <label for="raza" class="form-label">Raza</label>
+            {{!-- <input type="text" class="form-control" id="raza" name="raza"> --}}
+            <select id="raza" name="raza">
+                <option value="bodeguero andaluz" name="bodeguero andaluz">Bodeguero andaluz</option>
+                <option value="podenco andaluz">Podenco andaluz</option>
+                <option value="galgo">Galgo</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        
+        <div class="mb-3">
+            <p>Esterilizado</p>
+            <input type="radio" id="esterilizado" name="esterilizado" value="SI">
+            <label for="esterilizado" class="form-label">SI</label><br>
+            <input type="radio" id="esterilizado" name="esterilizado" value="NO">
+            <label for="esterilizado" class="form-label">NO</label><br>
+        </div> --}}
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

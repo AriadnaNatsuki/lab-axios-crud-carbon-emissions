@@ -4,7 +4,7 @@ require('dotenv').config();
 const express = require('express');
 const logger = require('morgan');
 const hbs = require('hbs');
-const createError=require('http-errors')
+const createError = require('http-errors');
 
 // require spotify-web-api-node package here:
 
@@ -26,9 +26,9 @@ app.use('/',routes)
 //console.log(process.env.CLIENT_ID)
 
 //Error handler
-app.use((req, res, next) => {
-    next(createError(404))
-})
+// app.use((req, res, next) => {
+//     next(createError(404))
+// })
 //Invocado desde misc.controller.js 
 app.use((error, req, res, next) => {
     console.log(error)
